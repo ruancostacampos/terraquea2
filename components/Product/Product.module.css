@@ -1,0 +1,138 @@
+/* Para dispositivos que não são HD*/
+
+@media screen and (max-width: 1011px) {
+
+    .container {
+        height: auto !important;
+    }
+
+    .videoL, .videoR{
+        display: none;
+    }
+
+    .imageContainer {
+        display: flex !important;
+        align-items: center;
+        padding: 14px 0 14px 0;
+        height: 50%;
+        overflow: hidden;
+    }
+
+
+    .infoContainerProduct {
+        width: auto;
+        height: auto;
+    }
+
+    .infoContainerProduct h2 {
+        font-size: 28px !important;
+        margin: 2px 0 !important;
+    }
+
+    .infoContainerProduct p {
+        font-size: 1em;
+    }
+
+    .infoContainerProduct button {
+        padding: 10px 30px !important;
+    }
+
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background-color: #F1F0EC;
+}
+
+.infoContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: var(--primary);
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+}
+
+.infoContainerProduct {
+    padding: 20px;
+}
+
+.imageContainer {
+    display: none;
+}
+
+
+.infoContainerProduct span {
+    font-family: 'Helvetica Neue Light';
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.infoContainerProduct h2 {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Butler Light';
+    color: var(white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px 0 20px 0;
+}
+
+.infoContainerProduct p {
+    font-family: 'Arial';
+    max-width: 600px;
+}
+
+.infoContainerProduct button {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--primary-more);
+    border-style: solid;
+    padding: 20px 50px 20px 50px;
+    border-color: var(--primary-more);
+    border-width: 1px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.infoContainerProduct button:hover {
+    background-color: var(--primary-more);
+    color: white;
+}
+
+.videoContainer {
+    display: flex;
+    height: 100%;
+    pointer-events: none;
+}
+
+.videoL {
+    height: auto;
+    left: 0;
+    mask-image: linear-gradient(to left, white, transparent)
+}
+
+.videoR {
+    height: auto;
+    right: 0;
+    mask-image: linear-gradient(to right, white, transparent)
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary);
+}
+
+.productImg {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}

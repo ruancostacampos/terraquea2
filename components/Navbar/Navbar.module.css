@@ -1,0 +1,146 @@
+.container {
+    display: flex;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    height: 92px;
+    align-items: center;
+    padding-left: 30px;
+    background-color: white;
+}
+
+
+.containerLinks {
+    width: 100%;
+}
+
+.containerLinks ul {
+    width: calc(100% - 170);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+    margin-right: 170px;
+}
+
+
+.containerLinks a {
+    color: var(--primary);
+    font-family: "Helvetica Neue Light", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    text-decoration: none;
+    transform: scaleX(0);
+}
+
+.containerLinks a::after {
+    display: block;
+    content: '';
+    border-bottom: 1px solid var(--primary);
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+
+.containerLinks a:hover::after {
+    transform: scaleX(1);
+}
+
+.mobileMenu {
+    display: hidden;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.mobileMenu:hover .menuLineReduced {
+    width: 18px !important;
+}
+
+.mobileMenu span {
+    background-color: var(--primary);
+    width: 18px;
+    height: 1px;
+    transition: width 250ms ease-in-out;
+}
+
+.menuLineReduced {
+    width: 15px !important;
+}
+
+.logo {
+    font-family: 'Sagitha';
+    font-size: 40px;
+}
+
+
+@media only screen and (max-width: 760px) {
+
+    .container {
+        justify-content: space-around;
+    }
+
+    .mobileMenu {
+        display: flex;
+        position: absolute;
+        left: 15px;
+    }
+
+    .containerLinks {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 569px) {
+    .mobileMenuContainerShow {
+        transform: translate(-320px);
+    }
+}
+
+/* Para celulares e tablets com a tela deitada */
+@media only screen and (max-height: 340px) {
+    .container {
+        height: 65px;
+    }
+}
+
+.subMenu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    background-color: white;
+    gap: 5px;
+    color: var(--primary);
+    font-family: "Helvetica Neue Light", sans-serif;
+    font-size: 0.6rem;
+    line-height: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+    box-shadow: -1px 3px 6px 0px rgba(153, 153, 153, 1);
+}
+
+.menu:hover .subMenu {
+    display: block;
+    animation: growDown 300ms ease-in-out forwards
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+
+    80% {
+        transform: scaleY(1.1)
+    }
+
+    100% {
+        transform: scaleY(1)
+    }
+}
+

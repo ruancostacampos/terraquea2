@@ -1,0 +1,120 @@
+/* Para dispositivos menor que HD (Tablets, Monitores pequenos, Celulares) */
+@media only screen and (max-width: 760px) {
+    .infoProduct {
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .infoProduct h1 {
+        display: none;
+    }
+
+    .infoProduct h2 {
+        font-size: 2.5em !important;
+    }
+
+    .description {
+        flex-direction: column;
+    }
+
+    .divider {
+        width: 90% !important;
+    }
+}
+
+/* Para celulares e tablets com a tela deitada */
+@media only screen and (max-height: 340px) {
+    .infoProduct {
+        flex-direction: row !important;
+        justify-content: space-around !important;
+    }
+
+    .divider {
+        display: none;
+    }
+
+
+}
+
+.homeIntroContainer {
+    width: 100%;
+    height: calc(100vh - 92px);
+}
+
+
+.branch {
+    width: 294px;
+    height: 456px;
+}
+
+.rotate {
+    position: absolute;
+    opacity: 20%;
+    top: -110px;
+    transform: rotate(146deg);
+    z-index: 50;
+    pointer-events: none;
+}
+
+.infoContainer {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    font-family: 'Handwrite';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 14px 0 14px 0;
+}
+
+.infoProduct {
+    displaY: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.infoProduct h1 {
+    font-size: 72px;
+    font-family: 'Glesh', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    color: var(--primary);
+    margin: 0;
+}
+
+.infoProduct h2 {
+    font-size: 75px;
+    font-weight: 500;
+    font-family: 'Butler Light';
+    color: var(--primary);
+    margin: 0;
+}
+
+.infoProduct p {
+    font-family: 'Helvetica Neue Light';
+    font-size: 18px;
+    color: var(--primary-less);
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: var(--primary-less);
+}
+
+.description {
+    font-family: 'Helvetica Neue Light';
+    display: flex;
+    justify-content: space-between;
+}
+
+.description p {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--primary-more)
+}
