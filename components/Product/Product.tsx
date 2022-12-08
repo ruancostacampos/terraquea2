@@ -1,5 +1,6 @@
 import styles from './Product.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
 
 type Props = {
     title: string,
@@ -18,7 +19,13 @@ const Product = ({title, goTo, description, image, video, align} : Props) => {
       <div className={styles.infoContainer}>
         
         <div className={styles.imageContainer}>
-          <img className={styles.productImage} src={image} alt="Demaquilante" />
+          <Image 
+            className={styles.productImage} 
+            src={image} 
+            alt="Demaquilante" 
+            width="600"
+            height="600"
+          />
         </div>
         
         <div className={styles.infoContainerProduct}>

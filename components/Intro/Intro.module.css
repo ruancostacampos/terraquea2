@@ -40,7 +40,10 @@
 
 .homeIntroContainer {
     width: 100%;
-    height: calc(100vh - 92px);
+    min-height: calc(100vh - 92px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 

@@ -12,10 +12,18 @@
 
     .imageContainer {
         display: flex !important;
+        justify-content: space-around;
         align-items: center;
         padding: 14px 0 14px 0;
         height: 50%;
+        width: 100%;
         overflow: hidden;
+    }
+
+    .imageContainer img{
+        height: auto;
+        width: 80%;
+        object-fit: cover;
     }
 
 

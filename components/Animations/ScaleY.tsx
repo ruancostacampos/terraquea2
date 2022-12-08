@@ -2,8 +2,8 @@ import { AnimatePresence, motion } from "framer-motion"
 
 type Props = {
   children: JSX.Element,
-  minHeight: number,
-  height: number
+  minHeight?: number,
+  height?: number
 }
 
 export const ScaleY = ({children, height, minHeight} : Props) => {
@@ -14,10 +14,10 @@ export const ScaleY = ({children, height, minHeight} : Props) => {
         animate={{scaleY: 1}}
         transition={{duration: 0.3, type: 'spring'}}
         style={{display: "flex", 
-                minHeight: minHeight || "calc(100% - 162px)", 
-                height: height || "auto",
+                minHeight: minHeight || "calc(100% - 162px)",              
                 alignItems: "center", 
-                justifyContent: "space-around"}}
+                justifyContent: "space-around",
+                flex: 1}}
       >
     {children}
    </motion.div>

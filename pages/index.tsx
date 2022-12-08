@@ -4,7 +4,6 @@ import Intro from '../components/Intro/Intro'
 import styles from '../styles/Home.module.css'
 import Product from '../components/Product/Product'
 import demaquilante from '../assets/images/demaquilante.png'
-import Footer from '../components/Footer/Footer'
 import HomeScroll from '../components/HomeScroll/HomeScroll'
 const description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 
@@ -42,7 +41,6 @@ export default function Home() {
           goTo="demaquilante"
         />
       </section>
-      <Footer/>
 
     </div>
   )

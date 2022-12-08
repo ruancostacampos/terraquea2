@@ -1,0 +1,81 @@
+.contatoContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+}
+
+@media screen and (max-width: 700px){
+    
+    .contatoTittle p {
+        font-size: 4rem !important;
+    }
+    
+}
+
+.contatoTittle p{
+    font-family: 'Butler Light', sans-serif;
+    font-weight: 500;
+    font-size: 5rem;
+    color: var(--primary);
+    text-align: center;
+}
+
+.contatoCardContainer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+    align-items: center;
+    min-width: 140px;
+    width: 100%;
+    padding: 0 30px 0 30px;
+    flex-wrap: wrap;
+}
+
+.contatoCardContainer a {
+    font-family: 'Butler Light', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--primary-less);
+    transition: color 0.3s;
+}
+
+.contatoCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contatoCard span{
+    font-family: 'Helvetica Neue Light', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--primary);
+    line-height: 3rem;
+    text-align: center;
+}
+
+.contatoCard a:hover {
+    color: var(--primary);
+}
+
+.contatoCard p {
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+    font-family: 'Helvetica Neue Light', sans-serif;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.contatoCardTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

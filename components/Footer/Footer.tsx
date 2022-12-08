@@ -8,7 +8,7 @@ const Footer = () => {
 
 
     return (
-        <footer id="footer" className={styles.footerContainer + ` ${styles.nofixed}`}>
+        <footer id="footer" className={styles.footerContainer}>
 
             <div className={styles.contacts}>
 
