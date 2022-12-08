@@ -1,0 +1,32 @@
+.container{
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    bottom: 0;
+    cursor: pointer;
+    transition: .4s all;
+}
+
+/* Esconde a seta quando está em resolução pequena */
+
+@media only screen and (max-width: 715px) {
+    .container{
+      display: none;
+    }
+}
+
+.arrow {
+    transition: .4s all;
+    opacity: 40%;
+    pointer-events: hover;
+}
+
+.arrow:hover {
+    width: 45px;
+    height: 45px;
+    opacity: 100%;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
