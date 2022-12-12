@@ -1,0 +1,12 @@
+.sobreContainer {
+    display: flex;
+    flex: 1;
+}
+
+@media screen and (max-width: 700px) {
+   
+    .sobreContainer {
+        height: auto;
+    }
+
+}

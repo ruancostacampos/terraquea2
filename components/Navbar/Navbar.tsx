@@ -41,10 +41,10 @@ const Navbar = () => {
             <Link href="/sobre">Sobre</Link>
           </li>
           <li className={styles.menu}>
-            <Link href="/demaquilante">Produtos</Link>
+            <Link href="/products/demaquilante">Produtos</Link>
             <div className={styles.subMenu}>
-              <Link href="/demaquilante">demaquilante</Link>
-              <Link href="/sabonete">sabonete</Link>
+              <Link href="/products/demaquilante">demaquilante</Link>
+              <Link href="/products/sabonete">sabonete</Link>
             </div>
           </li>
         </ul>
