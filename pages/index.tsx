@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import Product from '../components/Product/Product'
 import demaquilante from '../assets/images/demaquilante.png'
 import HomeScroll from '../components/HomeScroll/HomeScroll'
+import Soap from '../components/Soap/Soap'
 const description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 
 
@@ -21,7 +22,10 @@ export default function Home() {
       <HomeScroll/>
       <Intro />
 
-      <section id="demaquilante">
+      <Soap/>
+
+
+      {/* <section id="demaquilante">
         <Product
           title="Demaquilante"
           description={description}
@@ -31,6 +35,8 @@ export default function Home() {
           align="left"
         />
       </section>
+      */}
+
 
       <section id="sabonete">
         <Product
@@ -41,7 +47,6 @@ export default function Home() {
           goTo="demaquilante"
         />
       </section>
-
     </div>
   )
 }

@@ -1,0 +1,172 @@
+.container{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.image{
+    display: flex !important;
+    height: 100% !important;
+}
+
+.firstImage{
+    filter: brightness(50%);
+    object-fit: cover;
+    object-position: 80% 50%;
+    clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+    margin-right: calc(-6.6667% - 1px);
+    z-index: 0;
+}
+
+.firstImage:hover, .secondImage:hover, .thirdImage:hover{
+    filter: brightness(100%);
+}
+
+.secondImage{
+    filter: brightness(50%);
+    object-fit: cover;
+    clip-path: polygon(16.6% 0, 100% 0%, 80% 100%, 0% 100%);
+    z-index: 0;
+}
+
+.thirdImage{
+    filter: brightness(50%);
+    object-fit: cover;
+    clip-path: polygon(19.7% 0, 100% 0%, 100% 100%, 0% 100%);
+    margin-left: calc(-7.999% - 6px);
+    z-index: 0;
+}
+
+.secondImageContainer{
+    width: fit-content;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.secondImageContainerOpen{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.thirdImageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: fit-content;
+    right: 0;
+    top: 0;
+}
+
+.thirdImageContainerOpen{
+    position: absolute !important;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+.firstImageOpen{
+    transition: width ease-in 1s, height ease 1s 1s, clip-path  cubic-bezier(0.64, 0, 0.78, 0) 0.8s;
+    left: 0;
+    right: 0;
+    width: 100vw !important;
+    height: 20vh !important;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.secondImageOpen{
+    position: relative !important;
+    transition: width ease-in 1s, height ease 1s 1s, clip-path  ease-in 0.3s 0.7s;
+    width: 100vw !important;
+    height: 20vh !important;
+    z-index: 2;
+    align-self: center;
+    left: auto !important;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.thirdImageOpen{
+    position: relative !important;
+    transition: width ease-in 1s, height ease 1s 1s, clip-path  cubic-bezier(0.64, 0, 0.78, 0) 0.8s;
+    width: 100vw !important;
+    height: 20vh !important;
+    z-index: 2;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    left: auto !important;
+    float: right;
+    align-self: flex-end;
+}
+
+
+
+.wrapper{
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin-right: 100vw;
+    float: left;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.productInfoContainer{
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    width: 100%;
+    background-color: var(--background);
+    padding: 8px;
+    z-index: 2;
+}
+
+.productInfoContainer h2{
+    font-family: 'Butler Light', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--primary);
+    font-size: 50px;
+}
+
+.show1{
+    animation: show 0.3s ease-in 1s;
+    animation-fill-mode: forwards;
+}
+
+.show2{
+    animation: show 0.3s ease-in 1s;
+    animation-fill-mode: forwards;
+}
+
+.show3{
+    animation: show 0.3s ease-in 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show{
+
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+
+}
+
+
+
+
+

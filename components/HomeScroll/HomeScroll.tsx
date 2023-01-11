@@ -20,7 +20,7 @@ const HomeScroll = () => {
         .getBoundingClientRect().top + window.scrollY
 
         if(currentScroll < demaquilanteScroll || currentScroll < saboneteScroll){
-            window.location.href = "#demaquilante"
+            window.location.href = "#products"
             return
         }
 

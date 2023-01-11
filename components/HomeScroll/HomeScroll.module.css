@@ -5,6 +5,7 @@
     bottom: 0;
     cursor: pointer;
     transition: .4s all;
+    z-index: 1;
 }
 
 /* Esconde a seta quando está em resolução pequena */
