@@ -71,6 +71,7 @@
     height: 100vh;
     left: 0;
     top: 0;
+    z-index: 3;
 }
 
 .firstImageOpen{
@@ -81,6 +82,8 @@
     height: 20vh !important;
     object-fit: cover;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    filter: brightness(100%);
+    transform: scale(1.01);
 }
 
 .secondImageOpen{
@@ -92,6 +95,7 @@
     align-self: center;
     left: auto !important;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    filter: brightness(100%);
 }
 
 .thirdImageOpen{
@@ -104,6 +108,7 @@
     left: auto !important;
     float: right;
     align-self: flex-end;
+    filter: brightness(100%);
 }
 
 
@@ -119,12 +124,14 @@
     float: left;
     z-index: 1;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    filter: brightness(100%);
 }
 
 .productInfoContainer{
     display: flex;
     flex-direction: column;
     height: 0;
+    max-height: 80vh;
     width: 100%;
     background-color: var(--background);
     padding: 8px;
