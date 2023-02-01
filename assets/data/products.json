@@ -1,0 +1,19 @@
+{
+    "products" : [
+        {
+            "name"        : "Demaquilante",
+            "price"       : "99.99",
+            "description" : "Testing some description to put here, i'm thinking a lot here son..."
+        },
+        {
+            "name"        : "Sabonete",
+            "price"       : "55.55",
+            "description" : "Testing some description to put here, i'm thinking a lot here son..."
+        },
+        {
+            "name"        : "Sabonete líquido",
+            "price"       : "33.33",
+            "description" : "Testing some description to put here, i'm thinking a lot here son..."
+        }
+    ]
+}
