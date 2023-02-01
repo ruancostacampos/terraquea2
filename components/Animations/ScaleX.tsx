@@ -1,23 +1,28 @@
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import { ReactNode } from "react";
 
 type Props = {
-  children: JSX.Element,
-  duration: number,
-  delay: number
-}
+  children: ReactNode;
+  duration: number;
+  delay: number;
+};
 
-
-export const ScaleX = ({children, duration, delay} : Props) => {
+export const ScaleX = ({ children, duration, delay }: Props) => {
   return (
     <motion.div
-    initial={{scaleX: 0, width: "100%", display: "flex", justifyContent: "space-around"}}
-    whileInView={{scaleX: 1}}
-    viewport={{once: true}}
-    transition={{type: "tween", duration: duration, delay: delay}}
+      initial={{
+        scaleX: 0,
+        width: "100%",
+        display: "flex",
+        justifyContent: "space-around",
+      }}
+      whileInView={{ scaleX: 1 }}
+      viewport={{ once: true }}
+      transition={{ type: "tween", duration, delay }}
     >
-    {children}
-   </motion.div>
-  )
-}
+      {children}
+    </motion.div>
+  );
+};
 
-export default ScaleX
+export default ScaleX;
